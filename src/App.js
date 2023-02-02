@@ -4,6 +4,8 @@ import Greeting from './components/pure/greeting';
 import GreetingF from './components/pure/greetingF';
 import TaskListComponents from './components/container/task_list';
 import ComponenteA from './components/container/componenteA';
+import GreetingStyled from './components/pure/greetingStyled';
+import ClockExercise from './ejercicio456/ClockExercise';
 //https://gitlab.com/masajo/ob-react/-/commits/main/
 function App() {
   return (
@@ -14,11 +16,14 @@ function App() {
         {/* <Greeting name="Ronald"></Greeting> */}
         {/* <GreetingF name="Ronald"></GreetingF> */}
         {/*Componente de listado de tareas*/}
-        <TaskListComponents></TaskListComponents>
-        <ComponenteA></ComponenteA>
+        {/* <TaskListComponents></TaskListComponents> */}
+        {/* <ComponenteA></ComponenteA> */}
+        <ClockExercise></ClockExercise>
+        {/* <GreetingStyled name="Ronico"></GreetingStyled> */}
       </header>
     </div>
   );
 }
+
 
 export default App;
