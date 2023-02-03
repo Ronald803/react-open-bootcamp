@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Contacto } from '../../../models/contacto.class'
+import { Contact } from '../../../models/contact.class'
 
 
 const ComponenteB = ({contact})=>{
@@ -15,7 +15,7 @@ const ComponenteB = ({contact})=>{
 }
 
 ComponenteB.propTypes ={
-    contact: PropTypes.instanceOf(Contacto)
+    contact: PropTypes.instanceOf(Contact)
 }
 
 export default ComponenteB
