@@ -8,6 +8,8 @@ import GreetingStyled from './components/pure/greetingStyled';
 import ClockExercise from './ejercicio456/ClockExercise';
 import Father from './components/container/father';
 import ContactList from './components/container/contact_list';
+import OptionalRender from './components/pure/optionalRender';
+import Rectangulo from './ejercicio10-11-12.jsx/Rectangulo';
 //https://gitlab.com/masajo/ob-react/-/commits/main/
 function App() {
   return (
@@ -22,8 +24,13 @@ function App() {
         {/* <ComponenteA></ComponenteA> */}
         {/* <ClockExercise></ClockExercise> */}
         {/* <GreetingStyled name="Ronico"></GreetingStyled> */}
+        
+        {/* Ejemplos de renderizado condicional */}
+        {/* <OptionalRender></OptionalRender> */}
+        <Rectangulo></Rectangulo>
+
         {/* <TaskListComponents></TaskListComponents> */}
-        <ContactList></ContactList>
+        {/* <ContactList></ContactList> */}
         {/* <Father></Father> */}
       </header>
     </div>
