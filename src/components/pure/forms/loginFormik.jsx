@@ -1,4 +1,5 @@
 import React from 'react';
+import {useNavigate} from 'react-router-dom'
 import { Formik, Field, Form, ErrorMessage } from 'formik'
 import * as Yup from 'yup';
 
@@ -19,6 +20,7 @@ const LoginFormik = () => {
         email: '',
         password: ''
     }
+    const navigate = useNavigate();
     return (
         <div>
             <h4>Login Formik</h4>
@@ -31,7 +33,12 @@ const LoginFormik = () => {
                 onSubmit={ async (values) => {
                     await new Promise( (r)=> setTimeout(r,500) );
                     alert(JSON.stringify(values,null,2));
-                    localStorage.setItem('credential',values)
+                    await localStorage.setItem('credentials',values)
+                    await sessionStorage.setItem('loggeado', true)
+                    const local = window.sessionStorage.getItem('loggeado')
+                    console.log({local})
+                    navigate('/profile')
+                    window.location.reload()
                 }}
             >
                 {/* We obtain props from Formik */}
