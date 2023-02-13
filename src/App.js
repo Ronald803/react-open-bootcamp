@@ -13,6 +13,11 @@ import Rectangulo from './ejercicio10-11-12.jsx/Rectangulo';
 import LoginFormik from './components/pure/forms/loginFormik';
 import RegisterFormik from './components/pure/forms/registerFormik';
 import TaskFormik from './components/pure/forms/taskFormik';
+import AsyncExample from './components/pure/forms/AsyncExample';
+import ObservableExample from './components/pure/forms/ObservableExample';
+import FetchExample from './services/FetchExample';
+import AxiosExample from './components/pure/AxiosExample';
+import ChuckNorris from './ejercicios19-20-21/chuckNorris';
 //https://gitlab.com/masajo/ob-react/-/commits/main/
 function App() {
   return (
@@ -35,7 +40,15 @@ function App() {
         {/* Ejemplos de uso de formik */}
         {/* <LoginFormik></LoginFormik> */}
         {/* <RegisterFormik></RegisterFormik> */}
-        <TaskFormik></TaskFormik>
+        {/* <TaskFormik></TaskFormik> */}
+
+        {/* Ejemplos de procesos asíncronos */}
+        {/* <AsyncExample></AsyncExample> */}
+
+        {/* <ObservableExample></ObservableExample> */}
+        {/* <FetchExample></FetchExample> */}
+        {/* <AxiosExample></AxiosExample> */}
+        <ChuckNorris></ChuckNorris>
         {/* Proyecto Final */}
         {/* <TaskListComponents></TaskListComponents> */}
         {/* <ContactList></ContactList> */}
