@@ -18,6 +18,7 @@ import ObservableExample from './components/pure/forms/ObservableExample';
 import FetchExample from './services/FetchExample';
 import AxiosExample from './components/pure/AxiosExample';
 import ChuckNorris from './ejercicios19-20-21/chuckNorris';
+import AxiosCRUDExample from './components/pure/AxiosCRUDExample';
 //https://gitlab.com/masajo/ob-react/-/commits/main/
 function App() {
   return (
@@ -48,7 +49,8 @@ function App() {
         {/* <ObservableExample></ObservableExample> */}
         {/* <FetchExample></FetchExample> */}
         {/* <AxiosExample></AxiosExample> */}
-        <ChuckNorris></ChuckNorris>
+        <AxiosCRUDExample></AxiosCRUDExample>
+        {/* <ChuckNorris></ChuckNorris> */}
         {/* Proyecto Final */}
         {/* <TaskListComponents></TaskListComponents> */}
         {/* <ContactList></ContactList> */}
